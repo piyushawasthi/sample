@@ -1,0 +1,77 @@
+<HTML>
+<title>Tag's</title>
+
+<head>
+
+<style type="text/css">
+body {background-color:#CCFF99;}
+h1{color:#CC9900;}
+p {color:#CC9900;}
+a {color:red;}
+</style>
+
+<meta http-equiv="refresh" content="1">
+
+</head>
+<center><p id="time">1</p></center>
+<input type="button" value="Click Here"  onClick="updatetime()"/>
+<body onLoad="updatetime()">
+
+
+<script type="text/javascript" >
+function updatetime()
+{
+var i=document.getElementById("time").innerHTML;
+var myint=parseInt(i.valueOf());
+myint=myint+1;
+document.getElementById("time").innerHTML=myint;
+}
+</script>
+
+
+<h1>Headings1</h1>
+<h2>Headings2</h2>
+<h3>Headings3</h3>
+The <abbr title="World Health Organization">WHO</abbr> was founded in
+1948.
+<p>paragraph</p>
+<p>This is a paragraph
+<p>This is another paragraph
+
+This is Line Break<br/> After Line break Tag
+<br/>
+
+<h1>Text Formating</h1>
+<b>bold text</b><br/>
+<i>Italic text</i><br/>
+subscript:-H<sub>2</sub><br/>
+superscript:-x<sup>2</sup>+Y<sup>2</sup><br/>
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+
+<img src="Penguins.jpg" alt="Penguins" width="104" height="142">
+<br/>
+
+<h1><base 
+href="http://www.w3schools.com/images/"target="_blank"></base></h1>
+<br/>
+
+
+<a href="http://www.google.in">Google</a>
+
+<table>
+<tr>
+<th>Roll No</th>
+<th>name</th>
+<tr>
+<tr>
+<td>1</td>
+<td>vishal</td>
+</tr>
+<tr>
+<td>2</td>
+<td>xyz</td>
+</tr>
+</table>
+</body>
+</HTML>

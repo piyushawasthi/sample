@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>Untitled Document</title>
+<script>
+function validateForm()
+{
+var name =document.Entryform.txt_name;
+var addr=document.Entryform.address;
+var gender=document.Entryform.gender;
+var sel=document.Entryform.profesn;
+if(name.value=="")
+{  
+window.alert("Please Enter name");
+name.focus();
+return false;
+}
+if(addr.value=="")
+{
+window.alert("Please Enter Address");
+addr.focus();
+return false;
+}
+if(sel.selectedIndex<1)
+{
+window.alert("Please Select Your prfession");
+sel.focus();
+return false;
+}
+if(gender[0].checked==false && gender[1].checked==false)
+{
+window.alert("Please select your gender");
+return false;
+}
+return true;
+}
+</script>
+<style>
+body {background-color:#CCFF99;}
+input[type="text"]{ display: block; width: 400px;}
+textArea { display: block; width: 400px; }
+input[type="radio"]{font-weight:bold}
+input[type="submit"]{background-color:#99CC66; font-size:14px;width:200px; height:40px;}
+select {display: block; width: 200px; }
+</style>
+</head>
+<table>
+<form name="Entryform" action="Result.html" onsubmit="return validateForm()">
+<tr>
+<td>Enter Name:-</td>
+<td><input type="text" id="txt_name" name="txt_name"/></td>
+</tr>
+
+
+<tr>
+<td>Address:-</td>
+<td><textarea cols="40" rows="5" name="address"></textarea></td>
+</tr>
+
+<tr>
+<td>Gender:-</td>
+<td><input type="radio" name="gender" value="MALE"/>Male</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="radio" name="gender" value="FEMALE"/>Female</td>
+</tr>
+</tr>
+<tr>
+
+<tr>
+<td>Select your profession:-</td>
+<td>
+<select name="profesn">
+   <option> </option>
+  <option value="IT">Information technology</option>
+  <option value="pharmacy">pharmacy</option>
+  <option value="chemical">chemical</option>
+  <option value="Manegment">Manegment</option>
+  <option value="Finance">Finance</option>
+</select>
+</td>
+</tr>
+
+
+<td>Select lanuages that you know:-</td>
+<td><input type="checkbox" name="lang" value="English"/>English</td>
+<tr>
+<td></td>
+<td><input type="checkbox" name="lang" value="Hindi"/>Hindi</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="checkbox" name="lang" value="Marathi"/>Marathi</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit"  value="submit"/></td></tr>
+</form>
+</Table>
+<body>
+</body>
+</html>
